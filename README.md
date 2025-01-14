@@ -56,7 +56,7 @@ GCP에서 서비스 계정에 대한 IAM 멤버 권한을 할당하고 관리하
 
 ```hcl
 module "iam_member" {
-  source              = "git::https://github.com/your-repo/iam-member-module.git?ref=v1.0.0"
+  source              = "git::https://github.com/GCP-Terraform-Module-steamedEggMaster/service-account-iam-member-module.git?ref=v1.0.0"
 
   service_account_id   = "projects/my-project/serviceAccounts/my-service-account@my-project.iam.gserviceaccount.com"
   member               = "user:example@gmail.com"
@@ -92,7 +92,7 @@ module "iam_member" {
 #### b. Google Provider 버전
 | 버전 범위 | 설명                              |
 |-----------|-----------------------------------|
-| `~> 4.0`  | 최소 지원 버전                   |
+| `~> 6.0`  | 최소 지원 버전                   |
 
 <br>
 
